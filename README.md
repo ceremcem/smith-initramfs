@@ -1,5 +1,5 @@
 # smith-initramfs
-Rescue system right in the initramfs
+Rescue system right in the initramfs, intended to use on servers.
 
 ## Roadmap
 
