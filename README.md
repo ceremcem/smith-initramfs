@@ -10,10 +10,10 @@ Debian +9
 - [x] Add SSH support (see [unlock-luks-partition](https://github.com/ceremcem/unlock-luks-partition))
 - [ ] Include BTRFS progs for rescue purposes
 - [ ] Change cryptroot UUID at initramfs stage either temporarily or permanently 
-- [ ] Select another GRUB option temporarily 
-    * Place a file to indicate the option 
+- [ ] Select another GRUB option safely: 
+    * Place a file to indicate the desired GRUB option number. 
     * Make GRUB select the option at boot time 
-    * Delete this file in order to be able to boot from last good option if anything goes wrong with the new option 
+    * Delete this file within GRUB in order to be able to boot from last good option with a simple reboot if anything goes wrong with the new option 
     * Mark that selection permanent if everything goes well.
 - [ ] Create a hook to make updates with `update-initramfs -u`
 
