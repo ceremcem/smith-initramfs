@@ -1,6 +1,10 @@
 # smith-initramfs
 Rescue system right in the initramfs, intended to use on servers.
 
+## Target System 
+
+Debian +9
+
 ## Roadmap
 
 - [x] Add SSH support (see [unlock-luks-partition](https://github.com/ceremcem/unlock-luks-partition))
@@ -11,6 +15,7 @@ Rescue system right in the initramfs, intended to use on servers.
     * Make GRUB select the option at boot time 
     * Delete this file in order to be able to boot from last good option if anything goes wrong with the new option 
     * Mark that selection permanent if everything goes well.
+- [ ] Create a hook to make updates with `update-initramfs -u`
 
 ## How 
 
